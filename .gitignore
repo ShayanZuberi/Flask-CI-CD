@@ -12,3 +12,5 @@ __pycache__/
 
 # Ignore sensitive information
 config.ini
+
+.venv

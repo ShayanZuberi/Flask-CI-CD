@@ -13,12 +13,12 @@ plt.rcParams["figure.figsize"] = [7.50, 3.50]
 plt.rcParams["figure.autolayout"] = True
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/def')
 def hello_world():
     return 'Hello, World!'
 
 
-@app.route('/predict')
+@app.route('/')
 def preddict_stock():
     model = load_model('stock_predictor.h5' ,compile=False)
     scaler =MinMaxScaler (feature_range = (0,1))
